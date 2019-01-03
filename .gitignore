@@ -1,0 +1,6 @@
+# Always exclude node modules directory
+node_modules
+
+# Assuming we're using a module builder like webpack, the bundle.js file will become a fairly large file that will always change. Instead of git tracking it, we can ignore it and either build it before setting it up on our production server (or have our production server build it).
+bundle.js
+bundle.js.map
