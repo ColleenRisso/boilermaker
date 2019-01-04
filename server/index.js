@@ -25,7 +25,7 @@ app.use(function (request, response, next) {
 });
 
 //our server should send its index.html for any requests that don't match one of our API routes
-router.get('*', function (req, res) {
+app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, '../../public/index.html'));
   });
 

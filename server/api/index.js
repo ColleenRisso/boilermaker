@@ -1,6 +1,6 @@
 //anything here is already mounted on the '/api' route
-import path from 'path'
 const router = require('express').Router();
+const path = require('path')
 
 router.use('/user', require('./user')); // matches all requests to /api/user/
 router.use('/admin', require('./admin')); // matches all requests to /api/admin/
